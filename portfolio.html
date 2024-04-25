@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh</title>
+    <link rel="icon" href="./images/naresh.pic.jpg">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/6a46a53a06.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white
+}
+html{
+   scroll-behavior: smooth;
+}
+/* #header{
+    height: 100vh;
+    width: 500px;
+    background-image: url(images/naresh.pic.jpg);
+    background-size: cover;
+    background-position: center;
+
+} */
+#naresh::first-letter{
+    color:red;
+}
+h1{
+    margin: 20px;
+    color: whitesmoke;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+          display: inline-block; 
+         list-style: none;
+         margin: 10px 20px;
+}
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: medium;
+    position: relative; 
+}
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: magenta;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.bio{
+    margin-top: 20%;
+    font-size: 60px;
+}
+.bio h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.bio h1 span{
+    color: mediumvioletred;
+}
+ .role{
+        background:linear-gradient(90deg,red,green,blue);
+         color: rgba(5, 1, 5, 0.1);
+        background-clip: text;
+        font-size: 25px;
+ }
+ #about{
+    padding: 90px 70px;
+    color: darkgray;
+ }
+ .row{
+    display: flex;
+    justify-content: space-between;
+ }
+ .about1{
+    flex-basis: 35%;
+
+ }
+ .about1 img{
+    width: 90%;
+    border-radius: 15px;
+
+ }
+ .about2{
+    flex-basis: 60%;
+ }
+ .title{
+    color: white;
+    font-size: xx-large;
+ }
+ .tab-titles{
+    display: flex;
+    margin: 20px 20px 40px;
+ }
+ .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+ }
+ .tab-links::first-letter{
+    color: red;
+ }
+ .tab-links::after{
+  content: '';
+width: 0;
+height: 3px;
+background: mediumvioletred;
+position: absolute;
+ left: 0;
+bottom: -8px;
+transition: 0.5s;
+ }
+ .tab-links.active-link::after{
+       width: 50%;
+ }
+ .tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+ }
+ .tab-contents ul li span{
+    color: rgb(225, 63, 63);
+    font-size: 14px;
+ }
+ .tab-contents{
+    display: none;
+ }
+.tab-contents.active-tab{
+    display: block;
+}
+ #website  i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    margin: 0 15px;
+    border-radius: 50%;
+    border: 3px solid;
+}
+li{
+    list-style: none;
+}
+
+ #website li {
+    display: -webkit-inline-box;
+    
+ }
+ #website a :hover{
+    background: linear-gradient(blue,lightblue);
+    color: aliceblue;
+    transition: 3s;
+    transform: rotate(360deg) scale(1.2);;
+    
+ }
+ 
+.contact_left{
+   flex-basis:35% ;
+}
+.contact_right{
+   flex-basis: 60%;
+}
+.contact_left p{
+ margin-top: 10%;
+}
+
+.contact_left p i{
+   color: magenta;
+   margin-right: 15px;
+   font-size: 25px;
+}
+.btn{
+   display: inline-block;
+   margin: 30px auto;
+    text-decoration: none;
+    width: fit-content;
+    border: 0.25px solid lightsalmon;
+    padding: 9px 30px;
+    border-radius: 5px;
+    color: white;
+    background: rgb(225, 63, 63);
+}
+.btn:hover{
+   transform: scale(0.9);
+}
+.contact_right form{
+   width: 90%;
+}
+form input, form textarea
+{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background-color: #262626;
+   padding: 10px;
+   margin: 15px 6px;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form btn2{
+   padding: 14px 60px;
+   font-size: 25px;
+   cursor: pointer;
+}
+.copyright{
+   width: 100%;
+   text-align: center;
+   padding: 25px 0;
+   background: darkslategrey;
+   font-weight: 300;
+   margin-top: 20px;
+}
+.copyright i{
+      color: red;
+}
+.copyright i:hover{
+   color: palevioletred;
+   transform: scale(1.3);
+}
+nav .fa-solid{
+   display: none;
+}
+
+@media only screen and (max_width:600px) {
+   #header{
+      background-image: url(./images/naresh.pic.jpg);
+   }
+   .bio{
+      margin-top: 100%;
+      font-size: 16px;
+   }
+   .bio h1{
+      font-size: 30px;
+
+   }
+   nav .fa-solid{
+      display: block;
+      font-size: 25px;
+   }
+}
+#msg{
+   color: #61b752;
+   margin-top: -30px;
+   display: block;
+}
+    </style>
+</head>
+<body>
+    <div id="header" >
+        <div class="container">
+            <nav>
+                <h1 id="naresh"><b>N</b>ARESH.</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+           <div class="bio">
+            <span class="role">Web Developer</span>
+            <h1>Hi,I'm <span>Naresh Dongala</span> <br>From AP</h1>
+           </div>
+        </div>
+    </div>
+    <div id="about">
+    <div class="cont">
+        <div class="row">
+            <div class="about1">
+                <img src="./images/naresh.pic.jpg" height="400px" width="300px">
+                
+            </div>
+            <div class="about2">
+                <h1 class="title">About Me</h1>
+                <p >My Self Naresh Dongala i am from Vijayawada near Tiruvuru in AndhraPradesh.
+                    I did my Bachelor's Degree in BSc ComputreScience in the year of 2022s and an overall CGPA of 8.72 .
+                    Coming to my family i am a single parent my mother name is Padmavathi she is a homemaker and member of SHG group ,
+                    and next coming to my skills i am good at technical skills in Java.And coming to my Goals my short-term goal is get a job in a reputated company
+                     and my long-term goal is a get a good position in a where i can build my carrer and help the organisation too .And next my hobbies are playing cricket,watching tv and listening songs.
+                     And coming to my strengths and weakness my strengths is I always aim to finish my tasks quickly,with proper procedure and quality,and always want to learn new ways to finsih it in different ways to get more effeciency 
+                     and my weakness is i feel sometimes ,once i start the task i'm always aim for the result ,and spend much time on it irrespective of personal things </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links " onclick="opentab('education')">Education</p>
+        <p class="tab-links " onclick="opentab('website')">Websites</p>
+       </div> 
+      <div class="tab-contents active-tab" id="skills" >
+       <ul >
+        <li><span>DSA</span> <br>Aware with Basic of linear Data Structure and Non Linear Data Structures</li>
+        <li><span>CoreJava</span> <br> Good Knowledge of Compiler & Interpreter function.  
+            Attentive with keywords & variables.  
+            Aware with Oops concepts & Exception Handling.  </li>
+        <li><span>WebTechnologies</span> <br> HTML,CSS,JAVASCRIPT</li>
+        <li><span>J2EE</span> <br>JDBC,HIBERNATE</li>
+        <li><span>Database</span> <br><sub>SQL</sub>+<sub>plus</sub></li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul >
+         <li><span> SLR Prathiba Model Degree College </span> <br>Graduation – BSc -CGPA-8.72 <br> 2019 – 2022 <br>Tiruvuru, Andhra Pradesh </li>
+         <li><span> Sri Nidhi Junior College</span> <br> Intermediate-MPC -CGPA-9.59 <br>    2017 – 2019   <br> Tiruvuru, Andhra Pradesh </li>
+         <li><span>  Bhashyam High School </span> <br>   Secondary School Of Certificate – CGPA-9.0  <br>  2016 - 2017 <br> Tiruvuru, Andhra Pradesh </li>
+         </ul>
+       </div>
+       <div class="tab-contents" id="website">
+      <li class="fb"><a href="https://www.facebook.com/profile.php?id=100036098676170" target="_blank" > <i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/naresh_yadav_dongala0/" target="_blank" class="ins"> <i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/dongala-naresh-a82568274/" target="_blank" class="link"> <i class="fa-brands fa-linkedin"></i></a></li>
+       </div>
+    </div>
+   </div>
+    </div>
+
+    <div id="contact">
+       <div class="container">
+             <div class="row">
+<div class="contact_left">
+<h1 class="sub_title">Contact Me</h1>
+<p><i class="fa-solid fa-paper-plane"></i>nareshdongala1@gmail.com</p>
+<p><i class="fa-solid fa-square-phone"></i>8309508548</p>
+   <a href="images/NARESH DONGALA FRESHER.docx" download class="btn">Download CV</a>
+</div>
+<div class="contact_right">
+<form name="submit-to-google-sheet" action="">
+    <input type="text" name="Name" placeholder="Enter your name" required> 
+    <input type="email" name="Email" placeholder="Enter your mail" required>
+    <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+
+</form>
+<span id="msg"></span>
+       </div>
+    </div>
+ </div>
+ <p class="copyright">Copyright &copy  Have a &nbsp;<i class="fa-solid fa-heart"></i> nice day</p>
+</div>
+     <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+           }
+           for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+           }
+           event.currentTarget.classList.add("active-link")
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzrgnVFyQH5pzwZtKENkl0z3LLsAxTYV_3nN_wxNV1Rfj2TlP7BJMJfa9TwPiAjFULesA/exec'
+        const form = document.forms['submit-to-google-sheet']
+         const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
